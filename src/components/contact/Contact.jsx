@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./contact.scss";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Contact() {
+  const handleClick = () => {};
+
   return (
     <div className="contact" id="contact">
       <div className="left">
@@ -41,6 +44,7 @@ export default function Contact() {
       <div className="right">
         <h2>Contacto</h2>
         <div className="contactLogos">
+          {/* LinkedIn */}
           <div className="smLogo">
             <a
               href="https://www.linkedin.com/in/etcheparede/"
@@ -51,6 +55,7 @@ export default function Contact() {
               <h3>/etcheparede</h3>
             </a>
           </div>
+          {/* GitHub */}
           <div className="smLogo">
             <a
               href="https://github.com/etchepared"
@@ -61,16 +66,19 @@ export default function Contact() {
               <h3>/etchepared</h3>
             </a>
           </div>
+          {/* Gmail */}
           <div className="smLogo">
-            <a
-              href="https://github.com/etchepared"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="assets/gmail.svg" alt="Gmail" />
-              <h3>etcheparede@gmail.com</h3>
-            </a>
+            <div className="copyMail">
+              <CopyToClipboard text="etcheparede@gmail.com">
+                <button>
+                  <img src="assets/gmail.svg" alt="Gmail" />
+                  <h3>etcheparede@gmail.com</h3>
+                  <img id="copyButton" src="assets/copiar.png" alt="Gmail" />
+                </button>
+              </CopyToClipboard>
+            </div>
           </div>
+          {/* Whatsapp */}
           <div className="smLogo">
             <a
               href="https://wa.me/+5492964551421"
