@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import "./contact.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 export default function Contact() {
-  const handleClick = () => {};
+  const mySwal = withReactContent(Swal);
+
+  const handleClick = () => {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Email copiado",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
 
   return (
     <div className="contact" id="contact">
@@ -70,7 +82,7 @@ export default function Contact() {
           <div className="smLogo">
             <div className="copyMail">
               <CopyToClipboard text="etcheparede@gmail.com">
-                <button>
+                <button onClick={handleClick}>
                   <img src="assets/gmail.svg" alt="Gmail" />
                   <h3>etcheparede@gmail.com</h3>
                   <img id="copyButton" src="assets/copiar.png" alt="Gmail" />
