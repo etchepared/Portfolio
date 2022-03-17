@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
+import { FileCopy } from "@material-ui/icons";
 
 export default function Contact() {
-  const mySwal = withReactContent(Swal);
-
   const handleClick = () => {
     Swal.fire({
       position: "top-end",
@@ -34,6 +32,7 @@ export default function Contact() {
         </div>
         <div className="logoContainer">
           <img src="assets/express.svg" alt="Express" />
+          <br />
           <h3>Express</h3>
         </div>
         <div className="logoContainer">
@@ -85,7 +84,7 @@ export default function Contact() {
                 <button onClick={handleClick}>
                   <img src="assets/gmail.svg" alt="Gmail" />
                   <h3>etcheparede@gmail.com</h3>
-                  <img id="copyButton" src="assets/copiar.png" alt="Gmail" />
+                  <FileCopy className="icon" />
                 </button>
               </CopyToClipboard>
             </div>
