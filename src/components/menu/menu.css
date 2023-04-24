@@ -81,4 +81,7 @@
 
 .menu li:hover {
   font-weight: 500;
+  background-color: lightgrey;
+  color: #311b92;
+  width: fit-content;
 }
