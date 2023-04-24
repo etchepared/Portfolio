@@ -1,4 +1,4 @@
-@import "../../global.scss";
+/* @import "../../global.css";
 
 .navbarTop {
   width: 100%;
@@ -102,5 +102,108 @@
         }
       }
     }
+  }
+} */
+@import "../../global.css";
+
+.navbarTop {
+  width: 100%;
+  height: 12px;
+  background-color: #000063;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.navbar {
+  width: 100%;
+  height: 30px;
+  background-color: #311b92;
+  color: lightgrey;
+  position: fixed;
+  top: 12px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.navbar .wrapper {
+  width: 100%;
+  padding: 0px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .wrapper .left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar #nameLogo {
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10px;
+}
+
+.navbar .wrapper .left .itemContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.navbar .wrapper .left .itemContainer .icon {
+  font-size: 24px;
+}
+
+.navbar .wrapper .left .itemContainer span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 7px;
+}
+
+.navbar .wrapper .right .hamburger {
+  width: 28px;
+  height: 23px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: lightgrey;
+  transform-origin: left;
+  transition: all 2s ease;
+}
+
+.navbar.active {
+  background-color: lightgrey;
+  color: #311b92;
+}
+
+.navbar.active .hamburger span:first-child {
+  background-color: #311b92;
+  transform: rotate(45deg);
+}
+
+.navbar.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.active .hamburger span:last-child {
+  background-color: #311b92;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  .navbar .wrapper .left .itemContainer {
+    display: none;
   }
 }

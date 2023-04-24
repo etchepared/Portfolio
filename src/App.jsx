@@ -2,7 +2,7 @@ import NavBar from "./components/navbar/NavBar";
 import Intro from "./components/intro/Intro";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-import "./app.scss";
+import "./app.css";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 

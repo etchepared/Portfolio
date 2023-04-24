@@ -1,4 +1,4 @@
-@import "../../global.scss";
+/* @import "../../global.css";
 
 .contact {
   background-color: grey;
@@ -156,4 +156,126 @@
       }
     }
   }
+} */
+.contact {
+  background-color: grey;
+  display: flex;
+}
+.contact .left {
+  flex: 0.3;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 5px;
+}
+.contact .left .logoContainer {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .left .logoContainer img {
+  width: 100px;
+}
+.contact .left .logoContainer.height {
+  height: 50px;
+}
+.contact .left .logoContainer img.width {
+  width: 50px;
+}
+.contact .right {
+  background-color: #000063;
+  color: grey;
+  height: 90%;
+  display: flex;
+  flex: 0.7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact .right h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.contact .right .contactLogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .right .contactLogos .smLogo {
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact .right .contactLogos .smLogo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: grey;
+}
+.contact .right .contactLogos .smLogo a img {
+  width: 60px;
+  margin-right: 10px;
+}
+.contact .right .contactLogos .smLogo a h3 {
+}
+.contact .right .contactLogos .smLogo .copyMail {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: grey;
+}
+.contact .right .contactLogos .smLogo .copyMail img {
+  width: 60px;
+  margin-right: 10px;
+}
+.contact .right .contactLogos .smLogo .copyMail h3 {
+  color: grey;
+  font-size: 19px;
+}
+.contact .right .contactLogos .smLogo .copyMail .icon {
+  color: lightgray;
+  margin-left: 15px;
+  font-size: 25px;
+}
+.contact .right .contactLogos .smLogo .copyMail button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.contact .right .contactLogos .smLogo .copyMail button #copyButton {
+  width: 30px;
+  margin-left: 10px;
+}
+.contact .right .contactLogos .smLogo:hover a img {
+  box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  transition: all 2s ease;
+}
+.contact .right .contactLogos .smLogo:hover a h3 {
+  color: #00e676;
+  transition: all 2s ease;
+}
+
+.contact .right .contactLogos .copyMail:hover img {
+  box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(0, 230, 118, 1);
+  transition: all 2s ease;
+}
+
+.contact .right .contactLogos .copyMail:hover h3 {
+  color: #00e676;
+  transition: all 2s ease;
 }

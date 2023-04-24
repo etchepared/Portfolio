@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.scss";
+import "./contact.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2";
 import { FileCopy } from "@material-ui/icons";

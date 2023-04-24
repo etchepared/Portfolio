@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./intro.scss";
+import "./intro.css";
 import { KeyboardArrowDown } from "@material-ui/icons";
 import { init } from "ityped";
 

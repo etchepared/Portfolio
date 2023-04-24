@@ -1,0 +1,12 @@
+/* $width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+} */
+@media (max-width: 768px) {
+  .mobile-hide {
+    display: none;
+  }
+}

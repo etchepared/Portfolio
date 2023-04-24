@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu.scss";
+import "./menu.css";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (

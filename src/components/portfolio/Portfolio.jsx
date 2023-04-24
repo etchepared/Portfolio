@@ -1,5 +1,5 @@
 import React from "react";
-import "./portfolio.scss";
+import "./portfolio.css";
 import { KeyboardArrowDown } from "@material-ui/icons";
 
 export default function Portfolio() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.scss";
+import "./navbar.css";
 import { Person, Mail, LinkedIn } from "@material-ui/icons";
 
 export default function NavBar({ menuOpen, setMenuOpen }) {
