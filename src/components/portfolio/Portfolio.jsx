@@ -5,6 +5,9 @@ import { KeyboardArrowDown } from "@material-ui/icons";
 export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
+      <a className="up" href="#intro">
+        <KeyboardArrowDown className="icon" />
+      </a>
       <div className="top">
         <h1>Proyectos</h1>
       </div>
@@ -22,7 +25,7 @@ export default function Portfolio() {
           <h3>PokePedia</h3>
         </div>
       </div>
-      <a href="#contact">
+      <a className="down" href="#contact">
         <KeyboardArrowDown className="icon" />
       </a>
     </div>
