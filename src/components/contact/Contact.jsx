@@ -2,7 +2,8 @@ import React from "react";
 import "./contact.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2";
-import { FileCopy } from "@material-ui/icons";
+import { FileCopy, KeyboardArrowDown } from "@material-ui/icons";
+import HomeIcon from "@mui/icons-material/Home";
 
 export default function Contact() {
   const handleClick = () => {
@@ -101,6 +102,11 @@ export default function Contact() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="goback">
+        <a href="#intro">
+          <HomeIcon className="icon" />
+        </a>
       </div>
     </div>
   );
