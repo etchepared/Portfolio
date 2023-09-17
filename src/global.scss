@@ -5,3 +5,15 @@ $width: 768px;
     @content;
   }
 }
+
+a {
+  /* Estilos generales para todas las etiquetas <a> */
+  /* Cambiar el color del texto */
+  text-decoration: none; /* Quitar el subrayado por defecto */
+  /* Agrega más estilos según tus preferencias */
+}
+
+/*$primary-color: lightgrey;
+$secondary-color: #000063;
+$terceary-color: #311b92;
+$accent-color: #00e676;*/

@@ -34,6 +34,7 @@ $accent-color: #00e676;
       border: 1px solid $primary-color;
       margin: 16px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       position: relative;
@@ -63,10 +64,29 @@ $accent-color: #00e676;
           z-index: 0;
         }
       }
+
+      .links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 8px;
+
+        // Estilos para los enlaces dentro de .item
+        .repo-link,
+        .deploy-link {
+          display: flex;
+
+          a {
+            text-decoration: none;
+            color: $accent-color;
+            transition: color 0.3s ease;
+          }
+        }
+      }
     }
   }
 
-  a {
+  .down {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
