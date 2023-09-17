@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2";
-import { FileCopy, KeyboardArrowDown } from "@material-ui/icons";
+import { FileCopy } from "@material-ui/icons";
 import HomeIcon from "@mui/icons-material/Home";
 
 export default function Contact() {

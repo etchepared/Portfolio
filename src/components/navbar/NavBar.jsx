@@ -13,13 +13,26 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
             </div>
             <div className="itemContainer">
               <Person className="icon" />
-              <span>+54 9 2964 551421</span>
+              <a
+                href="https://wa.me/+5492964551421"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +54 9 2964 551421
+              </a>
             </div>
             <div className="itemContainer">
               <Mail className="icon" /> <span>etcheparede@gmail.com</span>
             </div>
             <div className="itemContainer">
-              <LinkedIn className="icon" /> <span>/etcheparede</span>
+              <LinkedIn className="icon" />
+              <a
+                href="https://www.linkedin.com/in/etcheparede/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                /etcheparede
+              </a>
             </div>
           </div>
           <div className="right">
