@@ -72,6 +72,22 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+        <div className="item">
+          <div className="project"></div>
+          <img src="assets/ABM.png" alt="abm app" />
+          <h3>ABM Challenge</h3>
+          <div className="links">
+            <div className="repo-link">
+              <a
+                href="https://github.com/etchepared/abm-challenge"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repo
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <a className="down" href="#contact">
         <KeyboardArrowDown className="icon" />
