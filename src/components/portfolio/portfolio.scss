@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 // Variables
 $primary-color: #311b92;
 $secondary-color: #000063;
@@ -25,7 +27,16 @@ $accent-color: #00e676;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+    }
 
     .item {
       width: 350px;
